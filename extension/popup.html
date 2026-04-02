@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Theme Force</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="logo" aria-hidden="true">&#9680;</span>
+      <h1>Theme Force</h1>
+    </header>
+
+    <p class="subtitle">Choose a display mode for all websites</p>
+
+    <div class="btn-group" role="group" aria-label="Theme selection">
+      <button id="btn-dark" class="theme-btn" data-mode="dark">
+        <span class="icon" aria-hidden="true">&#9790;</span>
+        <span class="label">Dark</span>
+      </button>
+
+      <button id="btn-system" class="theme-btn" data-mode="system">
+        <span class="icon" aria-hidden="true">&#9680;</span>
+        <span class="label">System</span>
+      </button>
+
+      <button id="btn-light" class="theme-btn" data-mode="light">
+        <span class="icon" aria-hidden="true">&#9788;</span>
+        <span class="label">Light</span>
+      </button>
+    </div>
+
+    <p class="current-mode">
+      Active: <strong id="current-label">System</strong>
+    </p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
