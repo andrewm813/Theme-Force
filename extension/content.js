@@ -69,7 +69,7 @@ api.runtime.onMessage.addListener((msg) => {
   }
 });
 
-api.runtime.sendMessage({ type: 'get-theme' }, (response) => {
+api.runtime.sendMessage({ type: 'get-theme-for-url', url: window.location.href }, (response) => {
   if (api.runtime.lastError) return;
   if (response && response.mode) {
     applyTheme(response.mode);
